@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+    <script src="js/require.js" async="true" defer data-main="js/main"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function () {
+            $(".banner").css({
+                width: $(window).width(),
+                // height:$(".banner .banner_box .banner_item img").height()
+            })
+
+            $(".banner .banner_btn1 ").css({
+                top: 270
+            })
+
+            $(".banner .banner_box").css({
+                width: $(window).width() * 9
+
+            })
+
+            $(".banner .banner_box .banner_item  img").css({
+                width: $(window).width() - 10
+            })
+            // 推荐宽度
+            $(".recommend_box .recommend .recommend_img .li_img").css({
+                width: ($(window).width() * 0.25) - 20
+            })
+
+            $(".recommend_box .recommend .recommend_img").css({
+                width: $(".recommend_box .recommend .recommend_img .li_img").width() * 11
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="hd_logo">
+            <a href="https://www.lenovo.com.cn">
+                <img src="images/header/ia_100000000.png" alt="">
+
+            </a>
+        </div>
+        <div class="hd_navigation">
+            <ul>
+                <li class="hd_nav_li">
+                    <a href="#">
+                        <span>个人及家庭产品</span>
+                    </a>
+                    <!-- 二级导航 -->
+                    <div class="nav2">
+                        <ul class="child_nav2">
+                            <li class="hd_nav2_li">
+                                <p class="hd_nav2_li_title">
+                                    <img src="images/header/ia_100000001.png" class="child_title_img" alt="">
+                                    <img src="images/header/ia_100000002.png" class="child_title_img_hover" alt="">
+                                    <span>Lenovo电脑</span>
+                                </p>
+                                <!-- 三级导航 -->
+                                <div class="nav3">
+                                    <ul class="child_nav3">
+                                        <!-- 这里的li是每一个竖列 -->
+                                        <li class="nav3_item">
+                                            <ul class="nav3_item_list">
+                                                <li class="title">
+                                                    <a href="#" target="_blank">
+                                                        游戏本
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        拯救者Y7000
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        拯救者Y7000P
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        拯救者Y9000K
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hd_nav2_li">
+                                <p class="hd_nav2_li_title">
+                                    <img src="images/header/ia_100000001.png" class="child_title_img" alt="">
+                                    <img src="images/header/ia_100000002.png" class="child_title_img_hover" alt="">
+                                    <span>台式机</span>
+                                </p>
+                                <!-- 三级导航 -->
+                                <div class="nav3">
+                                    <ul class="child_nav3">
+                                        <!-- 这里的li是每一个竖列 -->
+                                        <li class="nav3_item">
+                                            <ul class="nav3_item_list">
+                                                <li class="title">
+                                                    <a href="#" target="_blank">
+                                                        游戏本
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        拯救者Y7000
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        拯救者Y7000P
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        拯救者Y9000K
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hd_nav2_li"></li>
+                            <li class="hd_nav2_li"></li>
+                            <li class="hd_nav2_li"></li>
+                            <li class="hd_nav2_li"></li>
+                            <li class="hd_nav2_li"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hd_nav_li">
+                    <a href="#">
+                        <span>中小企业采购及服务</span>
+                    </a>
+                </li>
+                <li class="hd_nav_li">
+                    <a href="#">
+                        <span>政企大客户采购及服务</span>
+                    </a>
+                </li>
+                <li class="hd_nav_li">
+                    <a href="#">
+                        <span>数据中心</span>
+                    </a>
+                </li>
+                <li class="hd_nav_li">
+                    <a href="#">
+                        <span>商城</span>
+                    </a>
+                </li>
+                <li class="hd_nav_li">
+                    <a href="#">
+                        <span>社区</span>
+                    </a>
+                </li>
+                <li class="hd_nav_li">
+                    <a href="#">
+                        <span>服务</span>
+                    </a>
+                </li>
+                <li class="hd_nav_li">
+                    <a href="#">
+                        <span>咨询</span>
+                    </a>
+                </li>
+                <li class="hd_nav_li">
+                    <a href="#">
+                        <span>门店</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="hd_login">
+            <li class="hd_right_search">
+                <img src="images/header/ia_100000049.png" alt="">
+            </li>
+            <li class="hd_right_login">
+                <span class="hd_login_regist">
+                    <a href="#" class="login">登录</a>
+                    <i class="vertical_line"></i>
+                    <a href="#" class="regist">注册</a>
+                </span>
+                <!-- 登录界面的位置 -->
+                <span></span>
+                <span class="shopping_car">
+                    <a href="#">
+                        <img src="images/header/ia_100000048.png" alt="" class="hd_shopping_car">
+                        <span id="top_cart_count">0</span>
+                    </a>
+                </span>
+            </li>
+        </ul>
+        <div id="hd_search_box" class="hd_search">
+            <div class="hd_search_connect">
+                <div class="hd_search_bar">
+                    <a href="#" class="serch_box_img">
+                        <img src="images/header/ia_100000049.png" alt="" class="search_submit">
+                    </a>
+                    <input type="text" id="searchinput" class="search_input" placeholder="拯救者 刃9000 3代 2060SUPER显卡">
+                    <div class="search_close">
+                        <img src="images/header/ia_100000050.png" alt="">
+                    </div>
+                </div>
+                <!-- 头部搜索框叉号 -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="banner clear">
+        <div class="banner_box">
+            <div class="banner_item">
+
+                <img src="images/banner/ia_100000051.jpg" alt="">
+
+            </div>
+            <div class="banner_item">
+
+                <img src="images/banner/ia_100000052.jpg" alt="">
+
+            </div>
+            <div class="banner_item">
+
+                <img src="images/banner/ia_100000053.jpg" alt="">
+
+            </div>
+            <div class="banner_item">
+
+                <img src="images/banner/ia_100000054.jpg" alt="">
+
+            </div>
+            <div class="banner_item">
+
+                <img src="images/banner/ia_100000055.jpg" alt="">
+
+            </div>
+            <div class="banner_item">
+
+                <img src="images/banner/ia_100000056.jpg" alt="">
+
+            </div>
+            <div class="banner_item">
+
+                <img src="images/banner/ia_100000057.jpg" alt="">
+
+            </div>
+            <div class="banner_item">
+
+                <img src="images/banner/ia_100000058.jpeg" alt="">
+
+            </div>
+            <div class="banner_item">
+
+                <img src="images/banner/ia_100000051.jpg" alt="">
+
+            </div>
+            <div class="banner_btn1">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="banner_btn2">
+                <span>
+                    <i></i>
+                </span>
+                <span>
+                    <i></i>
+                </span>
+                <span>
+                    <i></i>
+                </span>
+                <span>
+                    <i></i>
+                </span>
+                <span>
+                    <i></i>
+                </span>
+                <span>
+                    <i></i>
+                </span>
+                <span>
+                    <i></i>
+                </span>
+                <span>
+                    <i></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 个人及家庭产品 -->
+    <div class="personal_box">
+        <div class="personal">
+            <!-- 标题部分 -->
+            <div class="personal_title">
+                <div class="longline"></div>
+                <div class="personal_title_text">
+                    <p>个人及家庭产品</p>
+                </div>
+            </div>
+
+            <ul class="personal_type">
+                <li class="personal_type_li">
+                    <a href="#">
+                        <p>
+                            <img src="images/personal/ia_100000059.png" alt="" class="img1">
+                            <img src="images/personal/ia_100000060.png" alt="" class="img2">
+                            <span>Lenovo 台式机</span>
+                        </p>
+                    </a>
+                    <!-- 商品描述 -->
+                    <div class="personal_connect">
+                        <div class="personal_connect4">
+                            <ul>
+                                <li class="li_item">
+                                    <div class="personal_connect4_box">
+                                        <div class="img">
+                                            <img src="images/personal/ia_100000061.png" alt="">
+                                        </div>
+                                        <div class="describe">
+                                            <div class="title">拯救者刃9000 3代</div>
+                                            <div class="subtitle">RTX 2060 SUPER显卡 畅玩2K分辨率</div>
+                                            <div class="price">
+                                                ￥
+                                                <span>9499</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li_item">
+                                    <div class="personal_connect4_box">
+                                        <div class="img">
+                                            <img src="images/personal/ia_100000061.png" alt="">
+                                        </div>
+                                        <div class="describe">
+                                            <div class="title">拯救者刃9000 3代</div>
+                                            <div class="subtitle">RTX 2060 SUPER显卡 畅玩2K分辨率</div>
+                                            <div class="price">
+                                                ￥
+                                                <span>9499</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li_item">
+                                    <div class="personal_connect4_box">
+                                        <div class="img">
+                                            <img src="images/personal/ia_100000061.png" alt="">
+                                        </div>
+                                        <div class="describe">
+                                            <div class="title">拯救者刃9000 3代</div>
+                                            <div class="subtitle">RTX 2060 SUPER显卡 畅玩2K分辨率</div>
+                                            <div class="price">
+                                                ￥
+                                                <span>9499</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li_item last">
+                                    <div class="personal_connect4_box">
+                                        <div class="img">
+                                            <img src="images/personal/ia_100000061.png" alt="">
+                                        </div>
+                                        <div class="describe">
+                                            <div class="title">拯救者刃9000 3代</div>
+                                            <div class="subtitle">RTX 2060 SUPER显卡 畅玩2K分辨率</div>
+                                            <div class="price">
+                                                ￥
+                                                <span>9499</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="personal_connect2">
+                            <div class="left">
+                                <div class="img_box">
+                                    <img src="images/personal/ia_100000065.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="img_box">
+                                    <img src="images/personal/ia_100000066.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="personal_type_li">
+                    <a href="#">
+                        <p>
+                            <img src="images/personal/ia_100000059.png" alt="" class="img1">
+                            <img src="images/personal/ia_100000060.png" alt="" class="img2">
+                            <span>Lenovo 笔记本</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="personal_type_li">
+                    <a href="#">
+                        <p>
+                            <img src="images/personal/ia_100000059.png" alt="" class="img1">
+                            <img src="images/personal/ia_100000060.png" alt="" class="img2">
+                            <span>手机/通信</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="personal_type_li">
+                    <a href="#">
+                        <p>
+                            <img src="images/personal/ia_100000059.png" alt="" class="img1">
+                            <img src="images/personal/ia_100000060.png" alt="" class="img2">
+                            <span>ThinkPad&nbsp;电脑</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="personal_type_li">
+                    <a href="#">
+                        <p>
+                            <img src="images/personal/ia_100000059.png" alt="" class="img1">
+                            <img src="images/personal/ia_100000060.png" alt="" class="img2">
+                            <span>选件/服务</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="personal_type_li">
+                    <a href="#">
+                        <p>
+                            <img src="images/personal/ia_100000059.png" alt="" class="img1">
+                            <img src="images/personal/ia_100000060.png" alt="" class="img2">
+                            <span>智能产品</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 中小企业采购及服务 -->
+    <div class="small_company_box">
+        <div class="small_company">
+            <div class="company_title">
+                <div class="longline"></div>
+                <div class="company_title_text">
+                    <p>中小企业采购及服务</p>
+                </div>
+            </div>
+
+            <ul class="company_type">
+                <li class="company_type_li">
+                    <a href="#">
+                        <p>
+                            <img src="images/small_company/ia_100000099.png" alt="" class="img1">
+                            <img src="images/small_company/ia_100000100.png" alt="" class="img2">
+                            <span>中小企业ThinkPad 精选</span>
+                        </p>
+                    </a>
+                    <div class="company_connect">
+                        <div class="company_connect4">
+                            <ul>
+                                <li class="li_item">
+                                    <div class="company_connect4_box">
+                                        <div class="img">
+                                            <img src="images/small_company/ia_100000109.png" alt="">
+                                        </div>
+                                        <div class="describe">
+                                            <div class="title"> ThinkPad E490</div>
+                                            <div class="subtitle">高性能办公本 送一年意外保</div>
+                                            <!-- <div class="price">
+                                                        ￥
+                                                        <span>9499</span>
+                                                    </div> -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li_item"></li>
+                                <li class="li_item"></li>
+                                <li class="li_item last"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="company_type_li">
+
+                </li>
+                <li class="company_type_li"></li>
+                <li class="company_type_li"></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 政企大客户采购及服务 -->
+    <div class="government_box">
+        <div class="government">
+            <div class="government_title">
+                <div class="longline"></div>
+                <div class="government_title_text">
+                    <p>政企大客户采购及服务</p>
+                </div>
+            </div>
+            <ul class="government_type">
+                <li class="government_type_li">
+                    <a href="#">
+                        <p>
+                            <img src="images/government/ia_100000131.png" alt="" class="img1">
+                            <img src="images/government/ia_100000132.png" alt="" class="img2">
+                            <span>商用电脑</span>
+                        </p>
+                    </a>
+                    <div class="government_connect">
+                        <div class="government_connect4">
+                            <ul>
+                                <li class="li_item">
+                                    <div class="government_connect4_box">
+                                        <div class="img">
+                                            <img src="images/government/ia_100000133.png">
+                                        </div>
+                                        <div class="describe">
+                                            <div class="title"> 昭阳K3</div>
+                                            <div class="subtitle">灵动智巧</div>
+                                            <div class="price">
+                                                ￥
+                                                <span>5999元起</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li_item"></li>
+                                <li class="li_item"></li>
+                                <li class="li_item last"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="company_type_li">
+
+                </li>
+                <li class="company_type_li"></li>
+                <li class="company_type_li"></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <!-- 推荐热门版块 -->
+
+    <div class="recommend_box">
+        <div class="recommend">
+            <div class="recommend_title">
+                <div class="longline"></div>
+                <div class="recommend_title_text">
+                    <p>推荐版块</p>
+                </div>
+            </div>
+
+            <ul class="recommend_img">
+                <div class="recommend_img_box">
+                    <li class="li_img">
+                        <img src="images/recommend/ia_100000155.jpg" alt="">
+                    </li>
+                    <li class="li_img">
+                        <img src="images/recommend/ia_100000156.jpg" alt="">
+                    </li>
+                    <li class="li_img">
+                        <img src="images/recommend/ia_100000157.jpg" alt="">
+                    </li>
+                    <li class="li_img">
+                        <img src="images/recommend/ia_100000158.jpg" alt="">
+                    </li>
+                    <li class="li_img">
+                        <img src="images/recommend/ia_100000155.jpg" alt="">
+                    </li>
+                    <li class="li_img">
+                        <img src="images/recommend/ia_100000155.jpg" alt="">
+                    </li>
+                    <li class="li_img">
+                        <img src="images/recommend/ia_100000155.jpg" alt="">
+                    </li>
+                    <li class="li_img">
+                        <img src="images/recommend/ia_100000155.jpg" alt="">
+                    </li>
+                    <li class="li_img">
+                        <img src="images/recommend/ia_100000155.jpg" alt="">
+                    </li>
+                    <li class="li_img">
+                        <img src="images/recommend/ia_100000155.jpg" alt="">
+                    </li>
+                </div>
+            </ul>
+
+            <div class="recommend_btn">
+                <div class="left">
+                    <div class="left_btn"></div>
+                    <div class="left_btn_icon"></div>
+                </div>
+                <div class="right">
+                    <div class="right_btn"></div>
+                    <div class="right_btn_icon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="footer">
+        <ul class="foot_top">
+            <li class="about_lenovo">
+                <a href="#" class="foot_top_title">关于联想</a>
+                <a href="#">投资者关系</a>
+                <a href="#">工作机会</a>
+                <a href="#">联系我们</a>
+                <a href="#">销售网点查询</a>
+                <a href="#">服务网点查询</a>
+            </li>
+            <li class="shop_lenovo">
+                <a href="#" class="foot_top_title">联想商城</a>
+                <a href="#">0元试用</a>
+                <a href="#">极速到家</a>
+                <a href="#">联想合伙人</a>
+                <a href="#">私人定制</a>
+                <a href="#">以旧换新</a>
+                <a href="#">联想众筹</a>
+            </li>
+            <li class="service_lenovo">
+                <a href="" class="foot_top_title">联想服务</a>
+                <a href="">驱动与软件下载</a>
+                <a href="">联想指数库</a>
+                <a href="">24小时智能客服</a>
+                <a href="">保修配置查询</a>
+                <a href="">服务政策查询</a>
+                <a href="">上门快修</a>
+                <a href="">延长保修</a>
+                <a href="">联想IT管理服务</a>
+            </li>
+            <li class="lenovo_website_group1">
+                <h6>联想网站群</h6>
+                <a href="#">联想创投</a>
+                <a href="#">聚享汇</a>
+                <a href="#">联想电脑管家</a>
+                <a href="#">联想超融合</a>
+                <a href="#">联想研究院</a>
+                <a href="#">智慧医疗</a>
+            </li>
+            <li class="lenovo_website_group2">
+                <h6>&nbsp;</h6>
+                <a href="#">联想百应平台</a>
+                <a href="#">联想租赁商城</a>
+                <a href="#">联想企业网盘</a>
+                <a href="#">ThinkPad官网</a>
+                <a href="#">lecoo商城</a>
+                <a href="#">联想大数据</a>
+            </li>
+            <li class="social_platform">
+                <h6>联想官方社交平台</h6>
+                <ul class="social_plat">
+                    <li>
+                        <a href="" class="wchat">
+                            <p class="darkwchat"></p>
+                            <p class="lightwchat"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="qqzone">
+                            <p class="darkqqzone"></p>
+                            <p class="lightqqzone"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="weibo">
+                            <p class="darkweibo"></p>
+                            <p class="lightweibo"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="fun">
+                            <p class="darkfun"></p>
+                            <p class="lightfun"></p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="clearfix">
+                    <a href="" class="weibo">
+                        <p class="dark_weibo"></p>
+                        <p class="light_weibo"></p>
+                    </a>
+                    <a href="" class="tieba">
+                            <p class="dark_tieba"></p>
+                            <p class="light_tieba"></p>
+                    </a>
+                </div>
+                <div class="select_country">选择国家地区</div>
+                <div class="countries_version">
+                    <div class="cn_img"></div>
+                </div>
+            </li>
+        </ul>
+        <div class="foot_bot">
+            <div class="foot_bot_con">
+                <div class="foot_bot_left">
+                    
+
+                        版权所有：1998-2019 联想集团
+
+                    <span>|</span>
+                    <a href="#">法律公告</a>
+                    <span>|</span>
+                    <a href="#">隐私保护</a>
+                    <span>|</span>
+                    <a href="#">产品安全</a>
+                </div>
+                <div class="foot_bot_right">
+                    <a href="#">京ICP备11035381</a>
+                    <span>|</span>
+                    <a href="#">京公网安备110108007970号</a>
+                    <span>|</span>
+                    <a href="#">营业执照：110000410127232</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

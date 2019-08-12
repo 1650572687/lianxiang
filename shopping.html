@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/shopping.css">
+</head>
+
+<body>
+    <div class="top_box">
+        <div class="top_cont">
+            <div class="login_out">
+                <div class="top_login">登录</div>
+            </div>
+
+            <div class="index_out">
+                <div class="index">返回首页</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="top_logo">
+        <img src="images/shopping/ia_100000000.jpg" alt="" class="top_logo_left">
+        <img src="images/shopping/ia_100000001.jpg" alt="" class="top_logo_right">
+    </div>
+
+    <!-- 购物信息显示区域 -->
+    <div class="buycard">
+        <div class="cart_main">
+            <div class="bc_table" id="main_table">
+                <table cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <th colspan="3" width="462">商品</th>
+                            <th width="163">规格</th>
+                            <th width="152">单价</th>
+                            <th width="152">数量</th>
+                            <th width="152">金额</th>
+                            <th width="117">操作</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <table cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td width="57" class="bc_table_sel">
+                                <a href=""></a>
+                            </td>
+                            <td width="148" class="bc_table_img">
+                                <a href="">
+                                    <img src="images/shopping/ia_100000010.jpg" alt="">
+                                </a>
+                            </td>
+                            <td width="257" class="bc_proname">
+                                <a href="">2019款 小新 Air 15 英特尔酷睿i5 15.6英寸超轻薄笔记本 轻奢灰</a>
+                                <div class="bc_service">
+                                    <a href="" class="bc_add">
+                                        <img src="images/shopping/ia_100000003.jpg" alt="">
+                                        &nbsp;购买联想服务
+                                    </a>
+                                </div>
+                            </td>
+                            <td width="163"></td>
+                            <td width="152">
+                                <span class="current_price">5999.00</span>
+                            </td>
+                            <td width="152">
+                                <label for="" class="i_box">
+                                    <input type="button" class="pro_less" value="-">
+                                    <input type="text" class="pro_num" value="1">
+                                    <input type="button" class="pro_add" value="+">
+                                </label>
+                            </td>
+                            <td width="152" class="bc_red">5999.00</td>
+                            <td width="117" style="text-align:left">
+                                <a href="">删除</a>
+                                <br>
+                                <a href="">加入收藏夹</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="bc_num clear">
+                <div class="bc_num_left">
+                    <a href="" class="bc_num_del">删除选中的商品</a>
+                </div>
+                <ul class="bc_num_right">
+                    <li class="zongjia">商品总价：5999.00 </li>
+                    <li class="save">优惠节省：0.00 </li>
+                    <li class="heji">
+                        合计:
+                        <span class="bc_red" id="totalmoneyf">5999.00 </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bc_probtn">
+                <a href="" id="submit">去结算</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- 商品推荐信息 -->
+    <div class="recommend">
+        <div class="recommend_box">
+            <div class="recommend_title">
+                <span class="recommend_border"></span>
+                <span class="recommend_content">为您推荐</span>
+            </div>
+            <div class="recommend_area clear">
+                <div id="prev_btn">
+                    <div class="recommend_btn_bg">
+                        <div class="recommend_btn">
+                            <img src="images/shopping/ia_100000004.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="recommend_hot">
+                    <div class="recommend_ul">
+                        <li class="recommend_good">
+                            <div class="recommend_good_img">
+                                <a href="">
+                                    <img src="images/shopping/ia_100000005.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="recommend_good_name"> 2019款 小新 Air 15 英特尔酷睿i5 15.6英寸超轻薄笔记本 轻奢灰 </div>
+                            <div class="recommend_good_price">￥5999</div>
+                        </li>
+                        <li class="recommend_good">
+                            <div class="recommend_good_img">
+                                <a href="">
+                                    <img src="images/shopping/ia_100000006.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="recommend_good_name"> 2019款 小新 Air 15 英特尔酷睿i5 15.6英寸超轻薄笔记本 轻奢灰 </div>
+                            <div class="recommend_good_price">￥5999</div>
+                        </li>
+                        <li class="recommend_good">
+                            <div class="recommend_good_img">
+                                <a href="">
+                                    <img src="images/shopping/ia_100000007.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="recommend_good_name"> 2019款 小新 Air 15 英特尔酷睿i5 15.6英寸超轻薄笔记本 轻奢灰 </div>
+                            <div class="recommend_good_price">￥5999</div>
+                        </li>
+                        <li class="recommend_good">
+                            <div class="recommend_good_img">
+                                <a href="">
+                                    <img src="images/shopping/ia_100000008.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="recommend_good_name"> 2019款 小新 Air 15 英特尔酷睿i5 15.6英寸超轻薄笔记本 轻奢灰 </div>
+                            <div class="recommend_good_price">￥5999</div>
+                        </li>
+                        <li class="recommend_good">
+                            <div class="recommend_good_img">
+                                <a href="">
+                                    <img src="images/shopping/ia_100000009.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="recommend_good_name"> 2019款 小新 Air 15 英特尔酷睿i5 15.6英寸超轻薄笔记本 轻奢灰 </div>
+                            <div class="recommend_good_price">￥5999</div>
+                        </li>
+                        <li class="recommend_good">
+                            <div class="recommend_good_img">
+                                <a href="">
+                                    <img src="images/shopping/ia_100000010.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="recommend_good_name"> 2019款 小新 Air 15 英特尔酷睿i5 15.6英寸超轻薄笔记本 轻奢灰 </div>
+                            <div class="recommend_good_price">￥5999</div>
+                        </li>
+                        <li class="recommend_good">
+                            <div class="recommend_good_img">
+                                <a href="">
+                                    <img src="images/shopping/ia_100000011.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="recommend_good_name"> 2019款 小新 Air 15 英特尔酷睿i5 15.6英寸超轻薄笔记本 轻奢灰 </div>
+                            <div class="recommend_good_price">￥5999</div>
+                        </li>
+                        <li class="recommend_good">
+                            <div class="recommend_good_img">
+                                <a href="">
+                                    <img src="images/shopping/ia_100000012.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="recommend_good_name"> 2019款 小新 Air 15 英特尔酷睿i5 15.6英寸超轻薄笔记本 轻奢灰 </div>
+                            <div class="recommend_good_price">￥5999</div>
+                        </li>
+                    </div>
+                </div>
+                <div id="next_btn">
+                    <div class="recommend_btn_bg">
+                        <div class="recommend_btn">
+                            <img src="images/shopping/ia_100000017.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_out">
+        <div class="footer">
+            <div class="foot_img">
+                <div class="img">
+                    <img src="images/shopping/ia_100000018.jpg" alt="">
+                </div>
+            </div>
+            <div class="foot_msg">
+                <div class="msg">
+                    <div class="footer_line">
+                        <a href="">关于联想</a>
+                        <span>|</span>
+                        <a href="">联系我们</a>
+                        <span>|</span>
+                        <a href="">新闻中心</a>
+                        <span>|</span>
+                        <a href="">工作机会</a>
+                        <span>|</span>
+                        <a href="">联想官网热搜</a>
+                        <span>|</span>
+                        <a href="">分类大全</a>
+                        <span>|</span>
+                        <a href="">联想产品大全</a>
+                        <span>|</span>
+                        <a href="">NBD</a>
+                        <span>|</span>
+                        <a href="">联想超融合</a>
+                        <span>|</span>
+                        <a href="">联想研究院</a>
+                        <span>|</span>
+                        <a href="">智慧医疗</a>
+                        <!-- <span>|</span> -->
+                    </div>
+                    <div class="footer_line">
+                        <a href="">版权所有：1998-2019 联想集团</a>
+                        <span>|</span>
+                        <a href="">法律公告</a>
+                        <span>|</span>
+                        <a href="">隐私权政策</a>
+                        <span>|</span>
+                        <a href="">京ICP备11035381</a>
+                        <span>|</span>
+                        <a href="">京公网安备110108007970号</a>
+                        <span>|</span>
+                        <a href=""> 营业执照：110000410127232</a>
+                        <span>|</span>
+                        <a href="">销售网点</a>
+                        <span>|</span>
+                        <a href="">服务网点</a>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
