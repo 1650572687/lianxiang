@@ -1,0 +1,505 @@
+@import "reset";
+
+// 头部
+.header {
+    width: 100%;
+    background: #e0e0e0;
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+    min-width: 1263px;
+}
+
+.header .lenovo_logo {
+    float: left;
+    // width: 155px;
+    width: 50px !important;
+    height: 50px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.header .lenovo_logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header .lenovo_logo a img {
+    height: 100%;
+    border: 0;
+    vertical-align: top;
+}
+
+// 头部导航
+.header .header_nav {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    display: block;
+}
+
+.header .header_nav .content {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-left: 53px;
+}
+
+.header .header_nav .content .left {
+    margin: 0;
+}
+
+.header .header_nav .content .left .lis {
+    float: left;
+    line-height: 49px;
+    font-size: 15px;
+    color: #8d8d8d;
+    margin-right: 22px;
+}
+
+.header .header_nav .content .left .lis a {
+    color: #8d8d8d;
+}
+
+.header .header_nav .content .right {}
+
+.header .header_nav .content .right .right_login {
+    float: right;
+    height: 49px;
+}
+
+.header .header_nav .content .right .right_login .login {
+    float: left;
+    line-height: 50px;
+    position: relative;
+}
+
+.header .header_nav .content .right .right_login .login .hd_login {
+    text-decoration: none;
+    color: #000;
+}
+
+.header .header_nav .content .right .right_login .login .hd_regist {
+    text-decoration: none;
+    color: #000;
+}
+
+.header .header_nav .content .right .right_login .login .vertical-line {
+    border-left: 1px solid #b8b8b8;
+    height: 11px;
+    display: inline-block;
+    margin: auto 2px;
+}
+
+.header .header_nav .content .right .right_login .login #head_bubble {
+    display: inline;
+    position: absolute;
+    top: 32px;
+    right: -30px;
+    width: 157px;
+    height: 33px;
+    background: url(https://p2.lefile.cn/product/adminweb/2019/01/18/028da9e3-588c-4a8c-9ed7-e94a9c639a12.png) no-repeat;
+    background-size: 157px 33px;
+    text-align: center;
+    line-height: 36px;
+    font-style: normal;
+    padding-right: 36px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.header .header_nav .content .right .right_login .login #head_bubble a {
+    color: #ba9964;
+    font-size: 12px;
+}
+
+.header .header_nav .content .right .right_login .login #head_bubble a img {
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    border: 0;
+    vertical-align: top;
+}
+
+.header .header_nav .content .right .right_login .phone {
+    float: right;
+    width: 30px;
+    height: 50px;
+    padding: 13.5px 0 13.5px 0;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+.header .header_nav .content .right .right_login .phone img {
+    width: 23px;
+    height: 23px;
+}
+
+// 头部隐藏部分
+.header .header_nav .content .right .right_login .phone .phone_hover {
+    display: none;
+    position: absolute;
+    left: -100px;
+    top: 50px;
+    float: left;
+    width: 198px;
+    z-index: 100;
+    background: #fff;
+}
+
+.header .header_nav .content .right .right_login .phone .phone_hover ul {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header .header_nav .content .right .right_login .phone .phone_hover ul li {
+    border-bottom: 1px solid #efefef;
+    height: 105px;
+    padding: 12px 0 0 12px;
+    box-sizing: border-box;
+}
+
+.header .header_nav .content .right .right_login .phone .phone_hover ul li div img {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+
+.header .header_nav .content .right .right_login .phone .phone_hover ul li div .title {
+    font-size: 16px;
+    width: 80px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.header .header_nav .content .right .right_login .phone .phone_hover ul li div .title .name {
+    color: #f10315;
+    font-size: 13px;
+    width: 80px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+// 主体部分
+.main {
+    min-width: 1200px;
+    clear: both;
+
+    .login_main {
+        height: 589px;
+        background: url(../images/login/ia_100000006.jpeg) no-repeat 50%;
+        background-size: cover;
+
+        .login_info {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+
+            .login_left {
+                a {
+                    width: 750px;
+                    height: 589px;
+                    float: left;
+                }
+            }
+
+            .login_msg {
+                float: right;
+                margin-top: 32px;
+                margin-right: 21px;
+                width: 410px;
+                height: 525px;
+                background-color: #fff;
+                position: relative;
+
+                .login_hd {
+                    .login_switch {
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+
+                        .login_switch_img {
+                            width: 60px;
+                            height: 60px;
+                            background: url(../images/login/ia_100000006.jpeg) no-repeat 50%;
+                            background-size: cover;
+                            opacity: .8;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .login_tip {
+                        position: absolute;
+                        right: 65px;
+                        top: 10px;
+
+                        .poptip {
+                            border: 2px solid #f3d995;
+                            height: 16px;
+                            line-height: 16px;
+                            padding: 5px 20px 5px 15px;
+                            background: #fefcee;
+                            position: relative;
+
+                            .poptip_arrow {
+                                top: 8px;
+                                right: 0;
+                                position: absolute;
+                                z-index: 10;
+
+                                em {
+                                    position: absolute;
+                                    width: 0;
+                                    height: 0;
+                                    border-color: hsla(0, 0%, 100%, 0);
+                                    border-style: solid;
+                                    overflow: hidden;
+                                    top: 0;
+                                    left: 1px;
+                                    border-left-color: #f3d995;
+                                    border-width: 6px 0 6px 6px;
+                                }
+
+                                span {
+                                    position: absolute;
+                                    width: 0;
+                                    height: 0;
+                                    border-color: hsla(0, 0%, 100%, 0);
+                                    border-style: solid;
+                                    overflow: hidden;
+                                    top: 0;
+                                    left: 0;
+                                    border-left-color: #fefcee;
+                                    border-width: 6px 0 5px 5px;
+                                }
+                            }
+
+                            .poptip_content {
+                                color: #6b6964;
+                                font-size: 12px;
+                                font-weight: 400;
+
+                                i {
+                                    img {
+                                        width: 14px;
+                                        height: 14px;
+                                        vertical-align: top;
+                                        margin-right: 6px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .login_static {
+                    .login_title {
+                        font-size: 24px;
+                        line-height: 24px;
+                        color: #424242;
+                        font-weight: 700;
+                        margin: 33px 36px 36px;
+                    }
+
+                    .normal_login_box {
+                        margin: 0 31px;
+
+                        .login_input {
+                            width: 100%;
+                            margin-bottom: 14px;
+                            position: relative;
+
+                            input {
+                                color: #424242;
+                                width: 282px;
+                                border: 1px solid #d6d6d6;
+                                height: 48px;
+                                line-height: 48px;
+                                padding-left: 14px;
+                                font-size: 14px;
+                                // color: #8c8c8c;
+                                padding-right: 50px;
+                            }
+
+                            .icon-clear {
+                                position: absolute;
+                                right: 14px;
+                                top: 17px;
+                                width: 16px;
+                                height: 16px;
+                                display: none;
+                                background: url(../images/login/ia_100000013.png) no-repeat 50%;
+                                cursor: pointer;
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .error-container {
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 12px;
+                        color: #ef1c22;
+                        margin: 0 31px;
+                        display: none;
+
+                        .icon-error {
+                            width: 15px;
+                            height: 15px;
+                            float: left;
+                            margin-top: 5px;
+                            background: url(../images/login/ia_100000017.png) no-repeat 50%;
+                            background-size: cover;
+                        }
+
+                        .error-msg {
+                            float: left;
+                            margin-left: 8px;
+                        }
+                    }
+
+                    .login_mains {
+                        margin: 14px 31px 0;
+
+                        input {
+                            float: left;
+                            margin-right: 5px;
+                        }
+
+                        label {
+                            display: block;
+                            line-height: 14px;
+                            color: #000;
+                            font-size: 14px;
+                            width: 90px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .submit {
+                        display: block;
+                        height: 50px;
+                        line-height: 50px;
+                        width: 348px;
+                        background-color: #e22319;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 14px;
+                        margin: 10px 31px 0;
+                    }
+
+                    .login_mains {
+                        .login_phone {
+                            float: left;
+                            color: #ef1c22;
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+
+                        .login_others {
+                            float: right;
+
+                            .regist_btn {
+                                border-right: 1px solid #a4a3a3;
+                                padding-right: 5px;
+                                font-size: 14px;
+                                line-height: 14px;
+                                float: left;
+                                color: #757575;
+                            }
+
+                            .reset_btn {
+                                border-left: 1px solid #e3e3e3;
+                                padding-left: 5px;
+                                font-size: 14px;
+                                line-height: 14px;
+                                float: left;
+                                color: #757575;
+                            }
+                        }
+                    }
+
+                    .cooperation{
+                        position: absolute;
+                        left: 26px;
+                        bottom: 0;
+                        width: 358px;
+                        height: 90px;
+
+                        .cooperation-title{
+                            text-align: center;
+                            font-size: 14px;
+                            color: #8c8c8c;
+                            line-height: 14px;
+                            height: 14px;
+
+                            span{
+                                width: 137px;
+                                height: 1px;
+                                background-color: #a4a3a3;
+                                float: left;
+                                margin-top: 6px;
+                            }
+
+                            em{
+                                float: left;
+                            }
+                        }
+
+                        .cooperation_items{
+                            margin-top: 15px;
+                            padding: 0 60px;
+
+
+
+                            a{
+                                float: left;
+                                margin-left: 38px;
+                                width:31px;
+                                height:31px;
+                            }
+
+                            a:first-child{
+                                margin-left: 0;
+                            }
+
+                            .qq{
+                                background: url(../images/login/ia_100000018.png) no-repeat 50%;
+                            }
+
+                            .weibo{
+                                background: url(../images/login/ia_100000019.png) no-repeat 50%;
+                            }
+
+                            .weixin{
+                                background: url(../images/login/ia_100000020.png) no-repeat 50%;
+   
+                            }
+
+                            .zhifubao{
+                                background: url(../images/login/ia_100000021.png) no-repeat 50%;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    margin-top: 55px;
+    margin-bottom: 30px;
+    p{
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        margin-top: 17px;
+    }
+}
